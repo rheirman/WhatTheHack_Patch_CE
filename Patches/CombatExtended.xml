@@ -1,0 +1,13 @@
+<Patch> 
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>*/DutyDef[defName="SearchAndDestroy"]/thinkNode[@Class="ThinkNode_Priority"]/subNodes</xpath>
+				<value>
+					<li Class="CombatExtended.JobGiver_TakeAndEquip"/>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>
