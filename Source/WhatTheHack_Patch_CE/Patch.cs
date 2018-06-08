@@ -13,7 +13,6 @@ namespace WhatTheHack_Patch_CE
     {
         static Patch()
         {
-            Log.Message("calling WhatTheHack_Patch_CE static constructor");
             HarmonyInstance harmony = HarmonyInstance.Create("WhatTheHack_Patch_CE");
             harmony.PatchAll(Assembly.GetExecutingAssembly());
         }

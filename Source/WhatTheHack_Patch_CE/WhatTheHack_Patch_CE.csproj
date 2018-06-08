@@ -59,10 +59,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CE_JobGiver_TakeAndEquip.cs" />
-    <Compile Include="LordToil_MechanoidReload.cs" />
     <Compile Include="Patch.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WTH_LordJob_SearchAndDestroy.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

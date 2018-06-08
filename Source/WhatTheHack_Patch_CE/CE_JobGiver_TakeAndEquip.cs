@@ -15,7 +15,6 @@ namespace WhatTheHack_Patch_CE
     {
         static IEnumerable<CodeInstruction> Transpiler(IEnumerable<CodeInstruction> instructions)
         {
-            Log.Message("calling TryGiveJob transpiler");
             var instructionsList = new List<CodeInstruction>(instructions);
             for (var i = 0; i < instructionsList.Count; i++)
             {
@@ -37,7 +36,6 @@ namespace WhatTheHack_Patch_CE
         }
         static public bool ShouldReload(Pawn p)
         {
-            Log.Message("calling IsHumanLikeOrHacked for" + p.KindLabel);
             //For mechanoids replace the check of is p.RaceProps.HumanLike by custom logic
             if (p.RaceProps.IsMechanoid && p.IsHacked())
             {
